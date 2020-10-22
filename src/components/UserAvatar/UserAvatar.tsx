@@ -6,7 +6,6 @@ type OwnProps = {}
 type Props = OwnProps
 
 export const UserAvatar: FunctionComponent<Props> = () => {
-  // gets user avatar url
 
   return <Avatar />
 }
