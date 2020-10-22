@@ -1,6 +1,6 @@
-import * as stylingVariables from './stylingVariables'
 import colors from './colors.json'
 import fonts from './fonts'
+import * as stylingVariables from './variables'
 
 const theme = {
   ...stylingVariables,
