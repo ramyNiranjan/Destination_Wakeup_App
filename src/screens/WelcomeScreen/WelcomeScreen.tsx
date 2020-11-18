@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import { CenteredFillView, Text, CircleView } from 'styled-native-kit'
+import CustomInput from '../../components/atoms/CustomInput'
 
 import i18n, { tk } from '../../i18n'
 
@@ -16,6 +17,7 @@ export const  WelcomeScreen : FunctionComponent<Props>= () =>  {
             {i18n.t(tk.welcome)}
           </Text>
         </CircleView>
+        <CustomInput/>
       </CenteredFillView>
     )
  

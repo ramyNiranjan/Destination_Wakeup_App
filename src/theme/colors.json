@@ -1,33 +1,26 @@
 {
   "primary": {
-    "color": "#FFF",
+    "color": "#296460",
     "onColor": "#FFF"
   },
-  "primary_variant": {
-    "color": "#FFF",
-    "onColor": "#FFF"
+  "accent_1": {
+   "color": "#000",
+   "onColor": "#FFF"
   },
-  "secondary": {
-    "color": "#FFF",
-    "onColor": "#FFF"
-  },
-  "secondary_variant": {
-    "color": "#FFF",
-    "onColor": "#FFF"
-  },
-  "tertiary": {
-    "color": "#FFF",
-    "onColor": "#FFF"
-  },
-  "tertiary_variant": {
-    "color": "#FFF",
-    "onColor": "#FFF"
+  "accent_2": {
+   "color": "#5270BD",
+   "onColor": "#FFF"
   },
   "background": {
     "color": "#FFF",
-    "onColor": "#FFF",
-    "lightOnColor": "#FFF"
+    "onColor": "#0B2E40"
   },
-  "error": "#FFF",
-  "success": "#FFF"
+  "neutral_1": "#0B2E40",
+  "neutral_2": "#7E7B7B",
+  "neutral_3": "#C3C3C3",
+  "neutral_4": "#D9D9D9",
+  "neutral_5": "#F0EEEE",
+  "neutral_6": "#F5F5F5",
+  "error": "#FB3C00",
+  "success": "#00FB7A"
 }

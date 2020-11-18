@@ -32,15 +32,14 @@ export type LabelProps = { small?: boolean | string }
 
 /* font-family: ${theme.fonts.regular}; */
 export const textBase = css`
-  color: ${theme.background.onColor};
+  color: ${theme.neutral_1};
 `
 
 export const textProps = css`
   ${propStyling<TypographyProps>({
-    primary: `color: ${theme.primary.onColor}`,
-    primaryLight: `color: ${theme.primary_variant.color}`,
-    secondary: `color: ${theme.secondary.onColor}`,
-    accent: `color: ${theme.accent.onColor}`,
+    primary: `color: ${theme.primary.color}`,
+    accent: `color: ${theme.accent_1.color}`,
+    light: `color: ${theme.neutral_2}`,
     // bold: `font-family: ${theme.fonts.bold}`,
   })}
   ${({ color }) => color && `color: ${color}`}
@@ -51,23 +50,8 @@ export const CustomText: TypographyComponent = styled(Text)`
   ${textProps}
 `
 
-export const Paragraph: TypographyComponent = styled(CustomText)`
-  font-size: ${16 * fontSizeMultiplier};
-  line-height: ${16 * fontSizeMultiplier * 1.3};
-  ${textProps}
-`
-
-/* font-family: ${theme.fonts.bold}; */
-export const Label: TypographyComponent<LabelProps> = styled(CustomText)`
-  font-size: ${16 * fontSizeMultiplier};
-  ${textProps}
-  ${propStyling<LabelProps>({
-    small: 'font-size: 12',
-  })}
-`
-
 export const InfoText: TypographyComponent = styled(CustomText)`
-  font-size: ${14 * fontSizeMultiplier};
+  font-size: ${18 * fontSizeMultiplier};
   ${textProps}
 `
 
@@ -76,41 +60,47 @@ export const Meta: TypographyComponent = styled(CustomText)`
   ${textProps}
 `
 
-/* font-family: ${theme.fonts.bold}; */
-export const Heading1: TypographyComponent = styled(CustomText)`
+export const Title1: TypographyComponent = styled(CustomText)`
+  font-size: ${28 * fontSizeMultiplier};
+  ${textProps}
+`
+
+export const Title2: TypographyComponent = styled(CustomText)`
   font-size: ${22 * fontSizeMultiplier};
   ${textProps}
 `
 
-/* font-family: ${theme.fonts.bold}; */
-export const Heading2: TypographyComponent = styled(CustomText)`
-  font-size: ${20 * fontSizeMultiplier};
+export const Headline1: TypographyComponent = styled(CustomText)`
+  font-size: ${30 * fontSizeMultiplier};
+  letter-spacing: ${-0.24 * fontSizeMultiplier};
   ${textProps}
 `
 
-/* font-family: ${theme.fonts.bold}; */
-export const Heading3: TypographyComponent = styled(CustomText)`
-  font-size: ${18 * fontSizeMultiplier};
+export const Headline2: TypographyComponent = styled(CustomText)`
+  font-size: ${25 * fontSizeMultiplier};
+  letter-spacing: ${-0.24 * fontSizeMultiplier};
   ${textProps}
 `
 
-/* font-family: ${theme.fonts.bold}; */
-export const Heading4: TypographyComponent = styled(CustomText)`
+export const Headline3: TypographyComponent = styled(CustomText)`
+  font-size: ${14 * fontSizeMultiplier};
+  ${textProps}
+`
+
+export const Body1: TypographyComponent = styled(CustomText)`
   font-size: ${16 * fontSizeMultiplier};
+  line-height: ${16 * fontSizeMultiplier * 1.474};
   ${textProps}
 `
 
-export const Heading5: TypographyComponent = styled(CustomText)`
+export const Body2: TypographyComponent = styled(CustomText)`
+  font-size: ${14 * fontSizeMultiplier};
+  line-height: ${14 * fontSizeMultiplier * 1.474};
   ${textProps}
 `
 
-export const Heading6: TypographyComponent = styled(CustomText)`
-  ${textProps}
-`
-
-/* font-family: ${theme.fonts.bold}; */
-export const InputErrorText: TypographyComponent = styled(CustomText)`
-  color: ${theme.error};
-  font-size: 10;
+export const Body3: TypographyComponent = styled(CustomText)`
+  font-size: ${12 * fontSizeMultiplier};
+  line-height: ${12 * fontSizeMultiplier * 1.474};
   ${textProps}
 `
