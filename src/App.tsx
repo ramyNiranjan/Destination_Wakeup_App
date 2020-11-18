@@ -19,16 +19,6 @@ const App: FunctionComponent<Props> = () => {
           <Tab.Screen name="Home" component={WelcomeScreen} />
         </Tab.Navigator>
       </NavigationContainer>
-      <Toast
-        ref={setToastRef}
-        // TODO: implement preconfigured positioning for the content container
-        contentContainerStyle={{
-          position: 'absolute',
-          top: 100,
-          left: 0,
-          right: 0
-        }}
-      />
     </View>
   )
 }
