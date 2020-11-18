@@ -40,9 +40,10 @@ const App: FunctionComponent<Props> = () => {
 // }
 
   useEffect(() => {
+    console.log('hello')
     // removeValue()// onboarding test
     isFirstTime()
-  })
+  },[])
 
   return (
     <View style={{ flex: 1, position: 'relative' }}>
